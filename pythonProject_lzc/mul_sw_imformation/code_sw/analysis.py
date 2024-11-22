@@ -6,7 +6,7 @@ import threading
 from threading import current_thread
 
 from netmiko import ConnectHandler
-from mul_sw_imformation.sw_information1.test import handle
+from ..sw_information1.test import handle
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 logging.basicConfig(
     level=logging.INFO,
