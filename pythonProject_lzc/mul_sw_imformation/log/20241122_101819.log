@@ -1,0 +1,20 @@
+2024-11-22 10:18:19 - root - INFO - 15056
+2024-11-22 10:18:19 - root - INFO - 15056
+2024-11-22 10:18:19 - root - INFO - 15056
+2024-11-22 10:18:19 - root - INFO - 15056
+2024-11-22 10:18:21 - root - INFO - 10.74.19.88 telnet connected successful
+2024-11-22 10:18:22 - root - INFO - 10.74.19.83 telnet connected successful
+2024-11-22 10:18:22 - root - INFO - 10.74.19.82 telnet connected successful
+2024-11-22 10:18:22 - root - INFO - 10.74.62.99 telnet connected successful
+2024-11-22 10:18:22 - root - INFO - 10.74.19.88 Cycle command fetch data successful!
+2024-11-22 10:18:22 - root - INFO - 10.74.19.88 The data is added to the text file
+2024-11-22 10:18:22 - root - INFO - 10.74.19.88 switch telnet disconnected
+2024-11-22 10:18:23 - root - INFO - 10.74.62.99 Cycle command fetch data successful!
+2024-11-22 10:18:23 - root - INFO - 10.74.62.99 The data is added to the text file
+2024-11-22 10:18:23 - root - INFO - 10.74.62.99 switch telnet disconnected
+2024-11-22 10:18:23 - root - INFO - 10.74.19.82 Cycle command fetch data successful!
+2024-11-22 10:18:23 - root - INFO - 10.74.19.82 The data is added to the text file
+2024-11-22 10:18:23 - root - INFO - 10.74.19.83 Cycle command fetch data successful!
+2024-11-22 10:18:23 - root - INFO - 10.74.19.83 The data is added to the text file
+2024-11-22 10:18:23 - root - INFO - 10.74.19.82 switch telnet disconnected
+2024-11-22 10:18:23 - root - INFO - 10.74.19.83 switch telnet disconnected

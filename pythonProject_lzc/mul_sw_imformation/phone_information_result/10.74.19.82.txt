@@ -1,0 +1,11 @@
+id               ip_address       mac_address      Platform       
+gi 1/0/1         100.101.0.239    845A3EC22D52     Cisco IP Phone 9861
+gi 1/0/2         100.101.0.245    845A3EC22ABE     Cisco IP Phone 9861
+gi 1/0/3         100.101.0.244    845A3EC22CE3     Cisco IP Phone 9861
+gi 1/0/4         100.101.0.246    845A3EC22CAD     Cisco IP Phone 9861
+gi 1/0/5         100.101.0.249    845A3EC22443     Cisco IP Phone 9861
+gi 1/0/6         100.101.0.248    845A3EC225EA     Cisco IP Phone 9861
+gi 1/0/7         100.101.0.251    845A3EC22CD4     Cisco IP Phone 9861
+gi 1/0/8         100.101.0.240    845A3EC22CB6     Cisco IP Phone 9861
+gi 1/0/9         100.101.0.228    845A3EC22863     Cisco IP Phone 9861
+gi 1/0/10        100.101.0.229    845A3EC22B57     Cisco IP Phone 9861

@@ -1,0 +1,11 @@
+id               ip_address       mac_address      Platform       
+gi 1/0/1         100.100.52.61    F8C650495357     Cisco IP Phone 9851
+gi 1/0/2         100.100.52.5     F8C65049531F     Cisco IP Phone 9851
+gi 1/0/3         100.100.52.62    F8C65049534C     Cisco IP Phone 9851
+gi 1/0/4         100.100.52.4     F8C650495326     Cisco IP Phone 9851
+gi 1/0/5         100.100.52.3     F8C65049533E     Cisco IP Phone 9851
+gi 1/0/6         0                0                0              
+gi 1/0/7         0                0                0              
+gi 1/0/8         0                0                0              
+gi 1/0/9         0                0                0              
+gi 1/0/10        0                0                0              

@@ -1,0 +1,6 @@
+re
+time
+openpyxl==3.1.5
+netmiko==4.4.0
+
+python .\linux_sw.py 10.74.62.99 cisco cisco cisco
