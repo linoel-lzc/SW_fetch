@@ -1,7 +1,6 @@
 import re
 
 
-
 def handle(file_path):
     with open(file_path, 'r') as file:
         content = file.read()
@@ -26,8 +25,8 @@ def handle(file_path):
         }
         list_all.append(var1)
     return list_all
+
+
 if __name__ == '__main__':
     list1 = handle('./sw_detail')
     print(list1)
-
-

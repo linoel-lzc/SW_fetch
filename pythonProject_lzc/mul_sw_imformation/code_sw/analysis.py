@@ -1,12 +1,14 @@
+import sys
 from datetime import datetime
 import logging
 import re
 import time
 import threading
-from threading import current_thread
 
 from netmiko import ConnectHandler
-from ..sw_information1.test import handle
+
+from pythonProject_lzc.mul_sw_imformation.sw_information1.test import handle
+
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 logging.basicConfig(
     level=logging.INFO,
@@ -15,7 +17,6 @@ logging.basicConfig(
     filename=f'../log/{timestamp}.log',
     filemode='w'
 )
-
 
 
 class SW_fetch:
@@ -74,24 +75,27 @@ class SW_fetch:
         self.connection.disconnect()
         logging.info(f'{self.device_info["host"]} switch telnet disconnected')
         # logging.info('switch telnet disconnected')
-def main(i):
-        SW1 = SW_fetch('cisco_ios_telnet', i['ip_address'], i['username'], i['passwd'], i['secret'])
-        output1 = SW1.execute_command(1, 10)
 
-        output1.insert(0,
-                        {'id': 'id', 'ip_address': 'ip_address', 'mac_address': 'mac_address',
-                        'Platform': 'Platform'})
-        try:
-            with open(f'../phone_information_result/{i["ip_address"]}.txt', 'w') as file:
-                for j in output1:
-                    a = f'{j["id"]:<15}  {j["ip_address"]:<15}  {j["mac_address"]:<15}  {j["Platform"]:<15}' + "\n"
-                    file.write(a)
-            logging.info(f'{i["ip_address"]} The data is added to the text file')
-        except Exception as E:
-            print(E)
-            logging.error(E)
-            # logging.info('The relevant data is entered into a text file')
-        SW1.disconnected()
+
+def main(i):
+    SW1 = SW_fetch('cisco_ios_telnet', i['ip_address'], i['username'], i['passwd'], i['secret'])
+    output1 = SW1.execute_command(1, 10)
+
+    output1.insert(0,
+                   {'id': 'id', 'ip_address': 'ip_address', 'mac_address': 'mac_address',
+                    'Platform': 'Platform'})
+    try:
+        with open(f'../phone_information_result/{i["ip_address"]}.txt', 'w') as file:
+            for j in output1:
+                a = f'{j["id"]:<15}  {j["ip_address"]:<15}  {j["mac_address"]:<15}  {j["Platform"]:<15}' + "\n"
+                file.write(a)
+        logging.info(f'{i["ip_address"]} The data is added to the text file')
+    except Exception as E:
+        print(E)
+        logging.error(E)
+        # logging.info('The relevant data is entered into a text file')
+    SW1.disconnected()
+
 
 def mul_thread(file_path):
     list1 = handle(file_path)
@@ -110,8 +114,5 @@ if __name__ == '__main__':
     start = time.time()
     mul_thread('../sw_information1/sw_detail')
     end = time.time()
-    print(f'运行时间{end-start}')
-
-
-
+    print(f'运行时间{end - start}')
 
